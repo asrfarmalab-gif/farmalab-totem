@@ -313,13 +313,16 @@ function comenzar(){
         document.getElementById("loginModal").style.display="flex";
 
     },3000);
-
+    logo.classList.add("Presionado");
+    tiempoPresionado = setTimeout(()  => {
+        document.getElementById("loginModal").style.display = "flex";
+    }, 3000);
 }
 
 function cancelar(){
 
     clearTimeout(tiempoPresionado);
-
+    logo.classList.remove("presionado");
 }
 
 function cerrarLogin(){

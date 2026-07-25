@@ -268,3 +268,16 @@ footer{
     color:red;
     margin-top:10px;
 }
+
+#logoFarmalab{
+    cursor: pointer;
+    transition: filter .25s ease, opacity .25s ease, transform .25s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#logoFarmalab.presionado{
+    filter: brightness(1.35);
+    opacity: .9;
+    transform: scale(0.98);
+}
