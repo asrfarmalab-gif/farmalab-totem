@@ -54,7 +54,9 @@ const contenido = [
 
     {
         tipo:"video",
-        archivo:"media/video1.mp4"
+        archivo:"media/video1.mp4";
+        tiempo: 8000
+
     }
 
 ];
