@@ -54,7 +54,7 @@ const contenido = [
 
     {
         tipo:"video",
-        archivo:"media/video1.mp4",
+        archivo:"media/video1.mov",
         tiempo: 8000
 
     }
