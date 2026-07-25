@@ -677,7 +677,7 @@ botonBorrar.addEventListener("click",()=>{
     document.getElementById("claveAdmin").value;
 
 
-    if(clave !== "farmalab2026"){
+    if(clave !== "29876626"){
 
 
         alert("Clave incorrecta");
