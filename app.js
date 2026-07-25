@@ -342,7 +342,7 @@ function iniciarSesion(){
 
     if(usuario==="admin" && password==="Farmalab2026"){
 
-        window.location.href="admin.html";
+        window.location.href="/admin/admin.html";
 
     }else{
 
