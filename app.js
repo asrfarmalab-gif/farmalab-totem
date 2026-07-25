@@ -48,7 +48,7 @@ const contenido = [
 
     {
         tipo:"imagen",
-        archivo:"media/promo2.jpg",
+        archivo:"media/promo2.jpeg",
         tiempo:8000
     },
 
