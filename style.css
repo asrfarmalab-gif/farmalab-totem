@@ -274,6 +274,8 @@ footer{
     transition: filter .25s ease, opacity .25s ease, transform .25s ease;
     user-select: none;
     -webkit-user-drag: none;
+    width: 150px;
+    height: auto;
 }
 
 #logoFarmalab.presionado{
