@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Farmalab - Panel de Guardias</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:#edf3ff;
+
+padding:40px;
+
+}
+
+h1{
+
+color:#0B4EA2;
+
+margin-bottom:10px;
+
+}
+
+h2{
+
+margin-bottom:30px;
+
+color:#444;
+
+}
+
+.container{
+
+display:flex;
+
+gap:30px;
+
+}
+
+.calendario{
+
+flex:3;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.lateral{
+
+flex:1;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+#mes{
+
+font-size:28px;
+
+font-weight:bold;
+
+margin-bottom:20px;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(7,1fr);
+
+gap:10px;
+
+}
+
+.diaSemana{
+
+text-align:center;
+
+font-weight:bold;
+
+padding:10px;
+
+background:#0B4EA2;
+
+color:white;
+
+border-radius:10px;
+
+}
+
+.dia{
+
+height:110px;
+
+border-radius:15px;
+
+background:#f4f7ff;
+
+padding:10px;
+
+cursor:pointer;
+
+transition:.25s;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:space-between;
+
+}
+
+.dia:hover{
+
+transform:scale(1.03);
+
+background:#dfe9ff;
+
+}
+
+.numero{
+
+font-size:24px;
+
+font-weight:bold;
+
+}
+
+.guardia{
+
+font-size:13px;
+
+color:#0B4EA2;
+
+font-weight:600;
+
+}
+
+select{
+
+width:100%;
+
+padding:12px;
+
+margin-top:15px;
+
+border-radius:10px;
+
+border:1px solid #ccc;
+
+}
+
+button{
+
+width:100%;
+
+margin-top:20px;
+
+padding:15px;
+
+background:#0B4EA2;
+
+color:white;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+font-size:18px;
+
+}
+
+button:hover{
+
+background:#083a7a;
+
+}
+
+#fechaSeleccionada{
+
+font-size:22px;
+
+font-weight:bold;
+
+margin-bottom:15px;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Farmalab</h1>
+
+<h2>Administrador de Guardias</h2>
+
+<div class="container">
+
+<div class="calendario">
+
+<div id="mes">
+
+Agosto 2026
+
+</div>
+
+<div class="grid" id="calendario">
+
+<div class="diaSemana">Lun</div>
+<div class="diaSemana">Mar</div>
+<div class="diaSemana">Mié</div>
+<div class="diaSemana">Jue</div>
+<div class="diaSemana">Vie</div>
+<div class="diaSemana">Sáb</div>
+<div class="diaSemana">Dom</div>
+
+<!-- El calendario se genera automáticamente -->
+
+</div>
+
+</div>
+
+<div class="lateral">
+
+<div id="fechaSeleccionada">
+
+Seleccioná un día
+
+</div>
+
+<label>
+
+Farmacia de Guardia
+
+</label>
+
+<select id="farmaciaSelect">
+
+<option value="">Seleccione...</option>
+
+</select>
+
+<input 
+id="buscarFarmacia"
+placeholder="Buscar farmacia..."
+style="
+width:100%;
+padding:12px;
+margin-top:15px;
+border-radius:10px;
+border:1px solid #ccc;
+">
+
+<div id="previewFarmacia" style="
+margin-top:20px;
+padding:15px;
+background:#f4f7ff;
+border-radius:15px;
+color:#333;
+display:none;
+">
+</div>
+
+
+<button id="borrar">
+
+Eliminar guardia del día
+
+</button>
+
+
+<input 
+id="claveAdmin"
+type="password"
+placeholder="Clave administrador"
+style="
+width:100%;
+padding:12px;
+margin-top:15px;
+border-radius:10px;
+border:1px solid #ccc;
+">
+
+<button id="guardar">
+
+Guardar Guardia
+
+</button>
+
+<button id="exportar">
+
+Exportar Guardias
+
+</button>
+
+<input 
+type="file" 
+id="importarArchivo" 
+accept=".json"
+style="display:none">
+
+<button id="btnImportar">
+
+Importar Guardias
+
+</button>
+
+<hr style="margin:30px 0;">
+
+<h3>Funciones</h3>
+
+<p>✅ Elegir guardia por día</p>
+
+<p>✅ Cambiar de mes</p>
+
+<p>✅ Guardar automáticamente</p>
+
+<p>✅ Exportar calendario</p>
+
+<p>✅ Importar calendario</p>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>

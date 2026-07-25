@@ -1,0 +1,81 @@
+[
+    {
+        "id":1,
+        "nombre":"Farmacia FarmaLab",
+        "direccion":"Sarmiento 629",
+        "telefono":"3583-480480",
+        "whatsapp":"3583-413014"
+    },
+
+    {
+        "id":2,
+        "nombre":"Farmacia Norte",
+        "direccion":"Dirección de ejemplo 456",
+        "telefono":"3583-111111",
+        "whatsapp":"3583111111"
+    },
+
+    {
+        "id":3,
+        "nombre":"Farmacia Sur",
+        "direccion":"Dirección de ejemplo 789",
+        "telefono":"3583-222222",
+        "whatsapp":"3583222222"
+    },
+
+    {
+        "id":4,
+        "nombre":"Farmacia Plaza",
+        "direccion":"Dirección de ejemplo 321",
+        "telefono":"3583-333333",
+        "whatsapp":"3583333333"
+    },
+
+    {
+        "id":5,
+        "nombre":"Farmacia Vida",
+        "direccion":"Dirección de ejemplo 654",
+        "telefono":"3583-444444",
+        "whatsapp":"3583444444"
+    },
+
+    {
+        "id":6,
+        "nombre":"Farmacia Salud",
+        "direccion":"Dirección de ejemplo 987",
+        "telefono":"3583-555555",
+        "whatsapp":"3583555555"
+    },
+
+    {
+        "id":7,
+        "nombre":"Farmacia Centro",
+        "direccion":"Dirección de ejemplo 147",
+        "telefono":"3583-666666",
+        "whatsapp":"3583666666"
+    },
+
+    {
+        "id":8,
+        "nombre":"Farmacia Nueva",
+        "direccion":"Dirección de ejemplo 258",
+        "telefono":"3583-777777",
+        "whatsapp":"3583777777"
+    },
+
+    {
+        "id":9,
+        "nombre":"Farmacia Oeste",
+        "direccion":"Dirección de ejemplo 369",
+        "telefono":"3583-888888",
+        "whatsapp":"3583888888"
+    },
+
+    {
+        "id":10,
+        "nombre":"Farmacia Este",
+        "direccion":"Dirección de ejemplo 741",
+        "telefono":"3583-999999",
+        "whatsapp":"3583999999"
+    }
+]

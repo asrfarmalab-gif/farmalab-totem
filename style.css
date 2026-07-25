@@ -1,0 +1,220 @@
+/* ==========================
+   FARMALAB DISPLAY
+   style.css
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#0b4ea2,#1565c0,#1e88e5);
+    overflow:hidden;
+    color:white;
+}
+
+#app{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header{
+    height:90px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 35px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+#logo{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+}
+
+.logo h1{
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.logo p{
+    font-size:15px;
+    opacity:.85;
+}
+
+.fechaHora{
+    text-align:right;
+}
+
+#hora{
+    font-size:42px;
+    font-weight:700;
+}
+
+#fecha{
+    font-size:20px;
+}
+
+/* ---------------- MAIN ---------------- */
+
+main{
+    flex:1;
+    display:grid;
+    grid-template-columns:72% 28%;
+}
+
+/* ---------- CARRUSEL ---------- */
+
+#slider{
+    background:black;
+    position:relative;
+    overflow:hidden;
+}
+
+#imagenActual,
+#videoActual{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ---------- PANEL ---------- */
+
+aside{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.10);
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.card h2{
+    font-size:28px;
+    margin-bottom:18px;
+}
+
+.card h3{
+    color:#7CFF8A;
+    font-size:26px;
+    margin-bottom:12px;
+}
+
+.card p{
+    font-size:19px;
+    margin-bottom:6px;
+}
+
+.card ul{
+    list-style:none;
+}
+
+.card li{
+    font-size:21px;
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+    height:55px;
+    background:#00c853;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.ticker{
+    width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+#textoTicker{
+    display:inline-block;
+    padding-left:100%;
+    font-size:24px;
+    font-weight:600;
+    animation:ticker 28s linear infinite;
+}
+
+/* ---------------- ANIMACIONES ---------------- */
+
+@keyframes ticker{
+
+    from{
+        transform:translateX(0%);
+    }
+
+    to{
+        transform:translateX(-100%);
+    }
+
+}
+
+.fade{
+
+    animation:fade 1s;
+
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:scale(1.03);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width:1400px){
+
+    .logo h1{
+        font-size:28px;
+    }
+
+    #hora{
+        font-size:34px;
+    }
+
+    .card h2{
+        font-size:22px;
+    }
+
+    .card li{
+        font-size:18px;
+    }
+
+}
