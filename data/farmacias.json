@@ -9,73 +9,63 @@
 
     {
         "id":2,
-        "nombre":"Farmacia Norte",
-        "direccion":"Dirección de ejemplo 456",
-        "telefono":"3583-111111",
-        "whatsapp":"3583111111"
+        "nombre":"Farmacia Medel",
+        "direccion":"Francisco Torres 569",
+        "telefono":"3583-420132"
     },
 
     {
         "id":3,
-        "nombre":"Farmacia Sur",
-        "direccion":"Dirección de ejemplo 789",
-        "telefono":"3583-222222",
-        "whatsapp":"3583222222"
+        "nombre":"Farmacia Costamagna",
+        "direccion":"Av. Tierney 299",
+        "telefono":"3583-420622"
     },
 
     {
         "id":4,
-        "nombre":"Farmacia Plaza",
-        "direccion":"Dirección de ejemplo 321",
-        "telefono":"3583-333333",
-        "whatsapp":"3583333333"
+        "nombre":"Farmacia Araceli",
+        "direccion":"Servando Vidal 601",
+        "telefono":"3583-481116"
     },
 
     {
         "id":5,
-        "nombre":"Farmacia Vida",
-        "direccion":"Dirección de ejemplo 654",
-        "telefono":"3583-444444",
-        "whatsapp":"3583444444"
+        "nombre":"Farmacia Pietribiasi",
+        "direccion":"Gregorio Ramirez 501",
+        "telefono":"3583-488144"
     },
 
     {
         "id":6,
-        "nombre":"Farmacia Salud",
-        "direccion":"Dirección de ejemplo 987",
-        "telefono":"3583-555555",
-        "whatsapp":"3583555555"
+        "nombre":"Farmacia Salvatore",
+        "direccion":"Garzon 716",
+        "telefono":"3583-420124"
     },
 
     {
         "id":7,
-        "nombre":"Farmacia Centro",
-        "direccion":"Dirección de ejemplo 147",
-        "telefono":"3583-666666",
-        "whatsapp":"3583666666"
+        "nombre":"Farmacia Santa Paula",
+        "direccion":"Av. Carlos YDE 723",
+        "telefono":"3583-421158"
     },
 
     {
         "id":8,
-        "nombre":"Farmacia Nueva",
-        "direccion":"Dirección de ejemplo 258",
-        "telefono":"3583-777777",
-        "whatsapp":"3583777777"
+        "nombre":"Farmacia Cassano",
+        "direccion":"San Martin 585",
+        "telefono":"3583-445426"
     },
 
     {
         "id":9,
-        "nombre":"Farmacia Oeste",
-        "direccion":"Dirección de ejemplo 369",
-        "telefono":"3583-888888",
-        "whatsapp":"3583888888"
+        "nombre":"Farmacia San Miguel",
+        "direccion":"Sarmiento 333",
+        "telefono":"3583-423361"
     },
 
     {
         "id":10,
-        "nombre":"Farmacia Este",
-        "direccion":"Dirección de ejemplo 741",
-        "telefono":"3583-999999",
-        "whatsapp":"3583999999"
+        "nombre":"Farmacia Apezteguia",
+        "direccion":"Lib. Gral. San Martin 802"
     }
 ]
