@@ -116,10 +116,11 @@ aside{
 .card h2{
     font-size:28px;
     margin-bottom:18px;
+    color: #1e09c0;
 }
 
 .card h3{
-    color:#230fd1;
+    color:#7CFF8A;
     font-size:26px;
     margin-bottom:12px;
 }
