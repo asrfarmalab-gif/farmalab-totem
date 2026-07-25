@@ -126,6 +126,24 @@
 
 </div>
 
+<!-- Modal de Login -->
+<div id="loginModal" class="login-modal">
+  <div class="login-box">
+    <h2>Acceso Administrador</h2>
+
+    <input type="text" id="usuario" placeholder="Usuario">
+
+    <input type="password" id="password" placeholder="Contraseña">
+
+    <div class="botones-login">
+      <button onclick="cerrarLogin()">Cancelar</button>
+      <button onclick="iniciarSesion()">Ingresar</button>
+    </div>
+
+    <p id="errorLogin"></p>
+  </div>
+</div>
+
 <script src="app.js"></script>
 
 </body>

@@ -288,5 +288,66 @@ const mensajes = [
 
 ];
 
+
 document.getElementById("textoTicker").innerHTML =
 mensajes.join(" &nbsp;&nbsp;&nbsp;&nbsp; ● &nbsp;&nbsp;&nbsp;&nbsp; ");
+
+const logo = document.getElementById("logoFarmalab");
+
+let tiempoPresionado;
+
+logo.addEventListener("mousedown", comenzar);
+
+logo.addEventListener("mouseup", cancelar);
+
+logo.addEventListener("mouseleave", cancelar);
+
+logo.addEventListener("touchstart", comenzar);
+
+logo.addEventListener("touchend", cancelar);
+
+function comenzar(){
+
+    tiempoPresionado = setTimeout(()=>{
+
+        document.getElementById("loginModal").style.display="flex";
+
+    },3000);
+
+}
+
+function cancelar(){
+
+    clearTimeout(tiempoPresionado);
+
+}
+
+function cerrarLogin(){
+
+    document.getElementById("loginModal").style.display="none";
+
+    document.getElementById("usuario").value="";
+
+    document.getElementById("password").value="";
+
+    document.getElementById("errorLogin").innerText="";
+
+}
+
+function iniciarSesion(){
+
+    const usuario=document.getElementById("usuario").value;
+
+    const password=document.getElementById("password").value;
+
+    if(usuario==="admin" && password==="Farmalab2026"){
+
+        window.location.href="admin.html";
+
+    }else{
+
+        document.getElementById("errorLogin").innerText="Usuario o contraseña incorrectos";
+
+    }
+
+}
