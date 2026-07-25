@@ -34,6 +34,7 @@ header{
     align-items:center;
     padding:20px 35px;
     border-bottom:1px solid rgba(255,255,255,.15);
+    margin-top: auto;
 }
 
 .logo{
