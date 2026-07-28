@@ -202,6 +202,7 @@ async function cargarGuardia(){
             f=>f.id==idFarmacia
         );
 
+        console.log("Farmacia encontrada:", farmacia);
 
 
         if(!farmacia){
