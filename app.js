@@ -265,7 +265,6 @@ setInterval(()=>{
     cargarGuardia();
 
 },3600000);
-cargarGuardia();
 
 
 // =========================
