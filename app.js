@@ -176,6 +176,10 @@ async function cargarGuardia(){
         let idFarmacia =
         guardias[fechaHoy];
 
+        console.log("Fecha:", fechaHoy);
+        console.log("ID guardia:", idFarmacia);
+        console.log("Farmacias:", farmacias);
+
 
 
         if(!idFarmacia){
