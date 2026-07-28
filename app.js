@@ -176,9 +176,6 @@ async function cargarGuardia(){
         let idFarmacia =
         guardias[fechaHoy];
 
-        console.log("Fecha:", fechaHoy);
-        console.log("ID guardia:", idFarmacia);
-        console.log("Farmacias:", farmacias);
 
 
 
@@ -201,8 +198,6 @@ async function cargarGuardia(){
         farmacias.find(
             f=>f.id==idFarmacia
         );
-
-        console.log("Farmacia encontrada:", farmacia);
 
 
         if(!farmacia){

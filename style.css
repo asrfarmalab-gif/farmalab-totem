@@ -49,9 +49,10 @@ header{
 }
 
 .logo h1{
-    font-size:34px;
+    font-size:45px;
     font-weight:700;
     letter-spacing:2px;
+    font-family: garamond, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .logo p{
