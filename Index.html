@@ -145,6 +145,30 @@
 
 <script src="app.js"></script>
 
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBuOMBFqPwQb6-lpOFOKxtwDYFF05HlhM0",
+    authDomain: "farmalab-totem.firebaseapp.com",
+    projectId: "farmalab-totem",
+    storageBucket: "farmalab-totem.firebasestorage.app",
+    messagingSenderId: "859845782194",
+    appId: "1:859845782194:web:f8da0d7659815f6f5fb7ab",
+    measurementId: "G-DVC96KSRJC"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 </body>
 
 </html>
